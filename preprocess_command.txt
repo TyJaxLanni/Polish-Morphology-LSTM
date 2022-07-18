@@ -1,0 +1,9 @@
+fairseq-preprocess \
+    --source-lang pol.nomsg \
+    --target-lang pol.gensg \
+    --trainpref train \
+    --validpref dev \
+    --testpref test \
+    --tokenizer space \
+    --thresholdsrc 2 \
+    --thresholdtgt 2

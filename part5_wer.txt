@@ -1,0 +1,4 @@
+--encoder-hidden-size 1024 \ doubled from 512
+
+dev: 16.99
+test: 16.07

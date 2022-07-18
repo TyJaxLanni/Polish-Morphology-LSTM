@@ -1,0 +1,36 @@
+fairseq-generate \
+    data-bin \
+    --source-lang pol.nomsg \
+    --target-lang pol.gensg \
+    --path part4/checkpoint_best.pt \
+    --gen-subset valid\
+    --beam 8 \
+    > predictions_dev.txt
+
+fairseq-generate \
+    data-bin \
+    --source-lang pol.nomsg \
+    --target-lang pol.gensg \
+    --path part4/checkpoint_best.pt \
+    --gen-subset test \
+    --beam 8 \
+    > predictions_test.txt
+
+
+fairseq-generate \
+    data-bin \
+    --source-lang pol.nomsg \
+    --target-lang pol.gensg \
+    --path part5/checkpoint_best.pt \
+    --gen-subset valid\
+    --beam 8 \
+    > predictions_dev_hyper.txt
+
+fairseq-generate \
+    data-bin \
+    --source-lang pol.nomsg \
+    --target-lang pol.gensg \
+    --path part5/checkpoint_best.pt \
+    --gen-subset test \
+    --beam 8 \
+    > predictions_test_hyper.txt

@@ -1,0 +1,1 @@
+python inputReader.py --seed 10 --input_path pol.tsv --train_path train.tsv --dev_path dev.tsv --test_path test.tsv
